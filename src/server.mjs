@@ -119,7 +119,7 @@ export async function createAppServer({
     }
 
     if (path === "/health/live") {
-      json(res, 200, { status: "pass", ready: false });
+      json(res, 200, { status: "pass" });
       return 200;
     }
 
@@ -267,6 +267,3 @@ export async function createAppServer({
   });
   return server;
 }
-
-
-
