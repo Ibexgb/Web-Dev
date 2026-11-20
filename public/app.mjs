@@ -159,3 +159,17 @@ projectsList.addEventListener("click", async event => {
     button.disabled = false;
   }
 });
+
+async function restoreSession() {
+  try {
+    const data = await api("/api/session");
+    currentUser = data.user;
+    csrfToken = data.csrfToken;
+    focusWorkspace();
+    await refreshProjects();
+  } catch {
+    // No active session; keep the sign-in form visible.
+  }
+}
+
+restoreSession();
