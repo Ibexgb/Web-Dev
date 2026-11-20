@@ -1,0 +1,17 @@
+{
+  "name": "oakline-renovations",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Consolidated localhost-only Oakline Renovations backend with SQLite, authentication, authorization, and operations checks",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/",
+    "smoke": "node qa/smoke.mjs",
+    "start": "node src/start.mjs",
+    "verify": "npm test && npm run smoke"
+  },
+  "dependencies": {
+    "sql.js": "^1.13.0"
+  }
+}
+
