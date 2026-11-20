@@ -38,6 +38,12 @@ async function api(path, options = {}) {
 }
 
 function renderProjects(items) {
+  if (items.length === 0) {
+    const message = document.createElement("p");
+    message.textContent = "No sample projects saved yet.";
+    projectsList.replaceChildren(message);
+    return;
+  }
   projectsList.replaceChildren(...items.map(project => {
     const card = document.createElement("article");
     card.className = "project";
