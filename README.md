@@ -1,6 +1,6 @@
 # Oakline Renovations
 
-A consolidated, localhost-only Oakline Renovations implementation for training and review. It combines the SQLite-backed project repository, authenticated staff routes, role-based authorization, CSRF checks, health endpoints, bounded telemetry, and the accessible staff frontend from the implementation examples.
+Oakline Renovations is a fictional, localhost-only staff project management application built to demonstrate full-stack website development skills. It provides role-based access for viewers and editors, allowing authorized staff to view, create, review, and delete sample project records. The application includes a responsive, accessible frontend, persistent SQL.js storage, session-based authentication, CSRF protection, automated testing, and GitHub Actions continuous integration.
 
 > Scope: fictional records only. The HTTP server binds to loopback and uses plain HTTP. Do not expose it publicly and do not put real customer data or real staff credentials in it.
 
