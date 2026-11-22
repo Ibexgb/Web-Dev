@@ -67,3 +67,14 @@ GitHub Actions runs automated verification on every push and pull request.
 The workflow is defined in `.github/workflows/verify.yml`. It uses Node.js 20, installs dependencies with `npm ci`, and runs `npm run verify`.
 
 You can review the latest results in the repository's Actions tab.
+
+## Application Screenshots
+
+### Login Page
+![Oakline staff login interface](docs/screenshots/login-page.png)
+
+### Viewer Dashboard
+![Oakline viewer dashboard](docs/screenshots/viewer-dashboard.png)
+
+### Editor Dashboard
+![Oakline editor dashboard](docs/screenshots/editor-dashboard.png)
