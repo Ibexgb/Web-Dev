@@ -59,3 +59,11 @@ Verified locally on Node.js v20.18.1 with `npm run verify`:
   - static page and module smoke check, plus live/ready endpoints.
 
 The database layer uses SQL.js rather than Node's `node:sqlite` API because the local Node 20 runtime does not include that API and native `better-sqlite3`/`sqlite3` builds were not available in this environment. The schema, repository boundaries, prepared-statement patterns, lifecycle behavior, and API tests follow the transcript examples.
+
+## Continuous Integration
+
+GitHub Actions runs automated verification on every push and pull request.
+
+The workflow is defined in `.github/workflows/verify.yml`. It uses Node.js 20, installs dependencies with `npm ci`, and runs `npm run verify`.
+
+You can review the latest results in the repository's Actions tab.
