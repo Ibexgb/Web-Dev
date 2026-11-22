@@ -15,7 +15,7 @@ The verify command runs the backend suite, then starts the application on an eph
 
 ## Local server
 
-Set unique fictional local-only passphrases before starting:
+Set unique fictional local-only passphrases of at least 16 characters each before starting:
 
 ```bash
 $env:OAKLINE_VIEWER_PASSWORD='replace-with-a-unique-long-local-passphrase'
