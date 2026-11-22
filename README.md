@@ -78,3 +78,7 @@ You can review the latest results in the repository's Actions tab.
 
 ### Editor Dashboard
 ![Oakline editor dashboard](docs/screenshots/editor-dashboard.png)
+
+## Project Case Study
+
+Read the [Oakline Renovations Project Case Study](docs/CASE-STUDY.md) for the project overview, development approach, testing, skills demonstrated, and limitations.
